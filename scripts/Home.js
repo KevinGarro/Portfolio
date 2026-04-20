@@ -1,4 +1,4 @@
-// Class responsible for creating and displaying the Home menu elements
+// Class responsible for creating and displaying the "Home" menu elements
 export class Home{
     render(){
         const app = document.getElementById("app");

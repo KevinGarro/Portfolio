@@ -3,7 +3,8 @@
     font-family: sans-serif;
     --primary-color:#16ba16;
     --secundary-color:#171A17;
-    --tertiary--color:#A9B2A9;
+    --tertiary-color:#A9B2A9;
+    --p-size:clamp(0.7rem,1.3vw,1.7rem);
 }
 
 body{
@@ -57,7 +58,7 @@ ul{
 
 #header-list-contact:hover{
     border-radius: 0 15px 0 15px;
-    background-color: var(--tertiary--color);
+    background-color: var(--tertiary-color);
 }
 
 
@@ -66,7 +67,7 @@ ul{
 /* Footer starts */
 footer{
     width: 100%;
-    background-color: var(--tertiary--color);
+    background-color: var(--tertiary-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -100,6 +101,23 @@ footer{
 }
 
 /* Footer ends */
+
+/* div animation starts*/
+
+div{
+    opacity: 0;
+    transform: translateY(50px);
+    animation: toApear 0.8s ease forwards;
+}
+
+@keyframes toApear {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* div animation ends */
 
 /* App starts */
 
@@ -152,10 +170,84 @@ footer{
 
 .home-about-me{
     width: 90%;
-    font-size: clamp(0.7rem,1.3vw,1.7rem);
+    font-size: var(--p-size);
     text-align: justify;
-    color: var(--tertiary--color);
+    color: var(--tertiary-color);
     padding: 5px;
     line-height: 1.3;
     margin: 5px;
 }
+
+/* Home ends */
+
+/* About me starts */
+
+.about-container{
+    margin: auto;
+}
+
+.about-me-container,.about-style-container{
+    background-color: var(--tertiary-color);
+}
+
+.about-me-container,.about-background-container,.about-style-container,.about-goals-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+.about-me-title,.about-background-subtitle,.about-style-subtitle,.about-goals-subtitle{
+    text-align: center;
+    text-decoration: underline;
+    padding: 15px;
+    width: 60%;
+    border-radius: 15px;
+    font-size: clamp(0.8rem,1.5vw,1.8rem);
+}
+
+.about-me-title,.about-style-subtitle{
+    color: var(--primary-color);
+    background-color: var(--secundary-color);
+}
+
+.about-me-p,.about-background-p,.about-style-p,.about-goals-p{
+    width: 60%;
+    font-size: var(--p-size);
+    text-align: justify;
+    line-height: 1.3;
+    margin: 20px;
+}
+
+.about-background-subtitle,.about-goals-subtitle{
+    color: var(--secundary-color);
+    background-color: var(--tertiary-color);
+}
+
+.about-background-p,.about-goals-p{
+    color: var(--tertiary-color);
+}
+
+/* About animation starts */
+
+.about-me-container,.about-background-container,.about-style-container,.about-goals-container {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeUp 0.8s ease forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* About animation ends */
+
+/* About me ends */
+
+/* Skills strats */
