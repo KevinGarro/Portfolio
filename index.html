@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <!-- Meta basic -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Meta SEO -->
+    <meta name="description" content="Portafolio de Kevin Muñoz, informático enfocado en desarrollo web.">
+    <meta name="keywords" content="portafolio, desarrollador web, HTML, CSS, JavaScript">
+    <meta name="author" content="Kevin Muñoz Garro">
+
+    <!-- Security -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="
+        default-src 'self';
+        img-src 'self' https:;
+        script-src 'self';
+        style-src 'self' 'unsafe-inline' https:;
+        font-src 'self' https:;
+    ">
+    <link rel="stylesheet" href="/styles/app.css">
+
+    <title>Kevin Muñoz Garro</title>
+</head>
+<body>
+    <!-- Header with diferents sections -->
+    <header id="header">
+        <nav id="header-nav">
+            <ul id="header-list">
+                <li class="header-list-item"> <a href="#home" id="header-list-home">Home</a></li>
+                <li class="header-list-item"><a href="#about" id="header-list-about">About me</a></li>
+                <li class="header-list-item"><a href="#skills" id="header-list-skills">Skills</a></li>
+                <li class="header-list-item"><a href="#projects" id="header-list-projects">Projects</a></li>
+                <li class="header-list-item"><a href="#contact" id="header-list-contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main, SPA style -->
+    <main id="app">
+        <script type="module" src="scripts/App.js"></script>
+    </main>
+
+    <!-- Footer with socials -->
+    <footer id="footer">
+        <div id="footer-socials">
+            <a href="https://www.instagram.com/kevin_19mg/" class="footer-socials-image" id="footer-socials-instagram" target="_blank">Instagram <img src="images/Instagram-Logo-PNG-Pic.png" alt="Instagram logo"></a>
+            <a href="https://www.facebook.com/profile.php?id=100078016431174" class="footer-socials-image" id="footer-socials-facebook" target="_blank">Facebook <img src="images/facebook-logo-facebook-icon-transparent-free-png.webp" alt="Facebook logo"></a>
+            <a href="https://cr.linkedin.com/in/kevin-munoz-garro-b39b76339" class="footer-socials-image" id="footer-socials-linkedin" target="_blank">LinkedIn <img src="images/linkedin-logo-linkedin-icon-transparent-free-png.webp" alt="LinkedIn logo"></a>
+            <a href="https://github.com/KevinGarro/" target="_blank" class="footer-socials-image" id="footer-socials-github">GitHub <img src="images/github-logo-png_seeklogo-304612.png" alt="GitHub logo"></a>
+        </div>
+        <p>© 2026 Kevin Muñoz Garro. All rigths reserved.</p>
+    </footer>
+</body>
+</html>
