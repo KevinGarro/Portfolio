@@ -341,3 +341,92 @@ div{
     background-color: var(--tertiary-color);
     color: var(--secundary-color);
 }
+
+/* Skills ends */
+
+
+/* Contact starts */
+.form-container{
+    background-color: var(--tertiary-color);
+    height: 80%;
+    width: 40%;
+    border-radius: 15px 0 0 15px;
+}
+
+.form-contact-h2{
+    text-align: center;
+    font-size: clamp(0.8rem,1.5vw,1.8rem);
+    margin-top: 35px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input{
+    width: 70%;
+    height: 30px;
+    margin: 15px;
+    background-color: var(--secundary-color);
+    border: none;
+    border-radius: 5px;
+    color: var(--tertiary-color);
+}
+
+textarea{
+    width: 70%;
+    height: 150px;
+    margin: 15px;
+    background-color: var(--secundary-color);
+    border: none;
+    border-radius: 5px;
+    color: var(--tertiary-color);
+    resize: none;
+}
+
+input:focus, textarea:focus,input:hover, textarea:hover{
+    outline: none;
+    background-color:#171a17a9;
+}
+
+input[type = submit]{
+    width: 40%;
+}
+
+.contact-container{
+    background-color: #0000006e;
+    height: 80%;
+    width: 40%;
+    border-radius: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-container p{
+    font-family: clamp(0.7rem,1.5vw,1.8rem);
+    color: var(--primary-color);
+}
+
+.contact-container h2{
+    text-align: center;
+    font-size: clamp(0.8rem,1.5vw,1.8rem);
+    margin-top: 35px;
+    color: var(--tertiary-color);
+}
+
+.contact-container h3{
+    font-size: clamp(0.7rem,1.3vw,1.7rem);
+    color:  #000;
+    background-color:var(--tertiary-color);
+    padding: 10px 30px;
+    border-radius: 15px 0 15px 0;
+    font-weight: bolder;
+    margin: 40px;
+}
+
+input[type = submit]:focus{
+    background-color: var(--secundary-color);
+}
