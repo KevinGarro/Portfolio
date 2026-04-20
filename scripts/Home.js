@@ -24,7 +24,7 @@ export class Home{
         h3.classList.add("home-subtitle");
 
         const p = document.createElement("P");
-        p.textContent = "Im Kevin Muñoz Garro, a web developer with a background in computer science and a passion for creating functional, well‑structured solutions. I specialize in modern JavaScript and am currently focusing on backend development with Node.js and SQL. I enjoy learning by doing, optimizing code, and applying best practices that connect theory with real‑world development. I’m looking for opportunities to keep growing professionally and contribute to projects where efficiency and code clarity are top priorities."
+        p.innerHTML = "Im Kevin Muñoz Garro, a web developer with a background in computer science and a passion for creating functional, well‑structured solutions.<br>I specialize in modern JavaScript and am currently focusing on backend development with Node.js and SQL.<br>I enjoy learning by doing, optimizing code, and applying best practices that connect theory with real‑world development. I’m looking for opportunities to keep growing professionally and contribute to projects where efficiency and code clarity are top priorities."
         p.classList.add("home-about-me");
 
         divInfo.append(h2, h3, p);

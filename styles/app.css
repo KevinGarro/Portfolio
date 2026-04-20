@@ -1,7 +1,7 @@
 /* default configuration */
 :root{
     font-family: sans-serif;
-    --primary-color:#01ED00;
+    --primary-color:#16ba16;
     --secundary-color:#171A17;
     --tertiary--color:#A9B2A9;
 }
@@ -16,9 +16,9 @@ body{
 
 header{
     width: 100%;
-    background:linear-gradient(to right,#000, #0000004a);
+    background:linear-gradient(to right,#000000b0, #0000004a);
     display: flex;
-    height: 100px;
+    height: 70px;
     justify-content: center;
     align-items: center;
 }
@@ -39,12 +39,25 @@ ul{
     text-decoration: none;
     font-weight: bold;
     transition: 0.3s;
+    text-decoration:underline;
 }
 
 .header-list-item a:hover{
     text-shadow: var(--primary-color) 0 0 15px;
     color: #5ddd5d;
     transition: 0.3s;
+}
+
+#header-list-contact{
+    background-color: var(--primary-color);
+    color: var(--secundary-color);
+    border-radius: 15px 0 15px 0;
+    padding: 7px;
+}
+
+#header-list-contact:hover{
+    border-radius: 0 15px 0 15px;
+    background-color: var(--tertiary--color);
 }
 
 
@@ -103,12 +116,11 @@ footer{
 
 .home-container{
     width: 80vw;
-    background-color: #ffffff16;
+    background-color: #ffffff03;
     border-radius: 20px;
     display: flex;
     padding: 20px;
     box-sizing: border-box;
-    border: 3px solid #0000007c;
     box-shadow: #ffffff2b 0 0 20px;
 }
 
