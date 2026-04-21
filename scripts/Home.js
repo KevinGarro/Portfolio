@@ -12,7 +12,7 @@ export class Home{
 
         const image = document.createElement("IMG");
         image.classList.add("home-me");
-        image.src = "https://tse1.mm.bing.net/th/id/OIP.ihrHIkr8denlmqKH1H7D8QHaHa?rs=1&pid=ImgDetMain&o=7&rm=3";
+        image.src = "/images/me.jpeg";
 
 
         const h2 = document.createElement("H2");
@@ -20,7 +20,7 @@ export class Home{
         h2.classList.add("home-title");
 
         const h3 = document.createElement("H3");
-        h3.textContent = "Desarrollador Frontend.";
+        h3.textContent = "Frontend developer";
         h3.classList.add("home-subtitle");
 
         const p = document.createElement("P");
