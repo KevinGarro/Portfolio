@@ -4,7 +4,7 @@
     --primary-color:#16ba16;
     --secundary-color:#171A17;
     --tertiary-color:#A9B2A9;
-    --p-size:clamp(0.7rem,1.3vw,1.7rem);
+    --p-size:clamp(1.3rem,1.3vw,1.7rem);
 }
 
 body{
@@ -14,6 +14,14 @@ body{
 }
 
 /* Header starts */
+
+.hamburger {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    cursor: pointer;
+}
 
 header{
     width: 100%;
@@ -155,7 +163,7 @@ div{
 }
 
 .home-title{
-    font-size: clamp(1rem,1.8vw,2rem);
+    font-size: clamp(1.5rem,1.8vw,2rem);
 }
 
 .home-title, .home-subtitle{
@@ -165,7 +173,7 @@ div{
 }
 
 .home-subtitle{
-    font-size: clamp(0.7rem,1.3vw,1.7rem);
+    font-size: clamp(1.4rem,1.3vw,1.7rem);
 }
 
 .home-about-me{
@@ -203,7 +211,7 @@ div{
     padding: 15px;
     width: 60%;
     border-radius: 15px;
-    font-size: clamp(0.8rem,1.5vw,1.8rem);
+    font-size: clamp(1.4rem,1.5vw,1.8rem);
 }
 
 .about-me-title,.about-style-subtitle{
@@ -294,6 +302,7 @@ div{
     flex-wrap: wrap;
     gap: 10px;
     margin-top: 60px;
+    align-items: center;
 }
 
 .skills-soft-list li {
@@ -323,13 +332,13 @@ div{
     background-color: var(--tertiary-color);
 }
 
-.skills-tec-h2,.skills-soft-h2{
+.skills-tec-h2, .skills-soft-h2{
     text-align: center;
     width: 60%;
     padding: 15px;
     margin: auto;
     border-radius: 15px;
-    font-size: clamp(0.8rem,1.5vw,1.8rem);
+    font-size: clamp(1.5rem,1.5vw,1.8rem);
 }
 
 .skills-tec-h2{
@@ -346,6 +355,15 @@ div{
 
 
 /* Contact starts */
+
+.container{
+    width: 100%;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
 .form-container{
     background-color: var(--tertiary-color);
     height: 80%;
@@ -355,7 +373,7 @@ div{
 
 .form-contact-h2{
     text-align: center;
-    font-size: clamp(0.8rem,1.5vw,1.8rem);
+    font-size: clamp(1.4rem,1.5vw,1.8rem);
     margin-top: 35px;
 }
 
@@ -373,6 +391,9 @@ input{
     border: none;
     border-radius: 5px;
     color: var(--tertiary-color);
+    padding: 5px 15px;
+    box-sizing: border-box;
+    font-size: var(--p-size);
 }
 
 textarea{
@@ -384,6 +405,8 @@ textarea{
     border-radius: 5px;
     color: var(--tertiary-color);
     resize: none;
+    padding: 5px 15px;
+    box-sizing: border-box;
 }
 
 input:focus, textarea:focus,input:hover, textarea:hover{
@@ -412,13 +435,13 @@ input[type = submit]{
 
 .contact-container h2{
     text-align: center;
-    font-size: clamp(0.8rem,1.5vw,1.8rem);
+    font-size: clamp(1.4rem,1.5vw,1.8rem);
     margin-top: 35px;
     color: var(--tertiary-color);
 }
 
 .contact-container h3{
-    font-size: clamp(0.7rem,1.3vw,1.7rem);
+    font-size: clamp(1.3rem,1.3vw,1.7rem);
     color:  #000;
     background-color:var(--tertiary-color);
     padding: 10px 30px;
@@ -429,4 +452,73 @@ input[type = submit]{
 
 input[type = submit]:focus{
     background-color: var(--secundary-color);
+}
+
+/* contact ends */
+
+/* Media starts */
+
+@media screen and (max-width: 1024px){
+    .home-container{
+        flex-direction: column;
+        align-items: center;
+        box-shadow: none;
+        width: 100%;
+        padding: 30px;
+    }
+    .home-title, .home-subtitle{
+        text-align: center;
+    }
+    #app{
+        min-height: 100vh;
+    }
+    .home-me{
+        width: 170px;
+    }
+    .about-me-container,.about-background-container,.about-style-container,.about-goals-container{
+        padding: 0;
+    }
+    .about-me-p,.about-background-p,.about-style-p,.about-goals-p{
+        width: 80%;
+    }
+    .skills-tec-h2{
+        margin-bottom: 50px;
+    }
+    .skills-tec-container{
+        padding-top: 20px;
+    }
+    .skills-soft-h2,.skills-tec-h2{
+        font-size: 5vw;
+    }
+    .skills-soft-list{
+        display: flex;
+        flex-direction: column;
+    }
+    .skills-soft-list li{
+        margin-bottom: 40px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-container,.form-container{
+        width: 100%;
+        border-radius: 0;
+    }
+    .contact-container h3{
+        margin: 10px;
+    }
+    .contact-container p{
+        margin-bottom: 15px;
+        padding: 20px;
+    }
+    .form-contact-h2{
+        margin-top: 20px;
+    }
+    footer img{
+        display: none;
+    }
+    #header-list{
+        padding: 0;
+    }
 }

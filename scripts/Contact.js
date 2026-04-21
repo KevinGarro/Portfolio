@@ -110,10 +110,13 @@ export class Contact{
             });
         });
 
+        const container = document.createElement("DIV");
+        container.classList.add("container");
 
         form.append(inputName,inputEmail,text,submit);
         divContact.append(h2Contact,h3Phone,pPhone,h3Email,pEmail);
         divForm.append(h2FormContact,form);
-        app.append(divForm,divContact);
+        container.append(divForm,divContact);
+        app.append(container);
     }
 }

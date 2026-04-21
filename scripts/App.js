@@ -39,3 +39,4 @@ btnSkills.addEventListener("click",()=>{
 btnContact.addEventListener("click",()=>{
     contact.render();
 });
+
